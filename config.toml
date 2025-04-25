@@ -1,4 +1,8 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "simple-snipcart-shop"
+title = 'Adopt a pet'
+theme = "ananke"
+
+[params]
+  homepage_image = "/images/homepage-image.jpg"
+  description = "A simple and elegant Hugo blog"
