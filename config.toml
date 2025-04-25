@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'Adopt a pet'
 theme = "ananke"
 
+pagination.pagerSize = 10
+
 [params]
-  homepage_image = "/images/homepage-image.jpg"
+  homepage_image = "/images/homepage-image.png"
   description = "A simple and elegant Hugo blog"
