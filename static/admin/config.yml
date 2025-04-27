@@ -2,17 +2,16 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "static/uploads"  # Where uploaded images go
-public_folder: "/uploads"       # How to access them in the frontend
+media_folder: "static/uploads"
+public_folder: "/uploads"
 
 collections:
-  - name: "blog"
-    label: "Blog"
+  - name: "posts"
+    label: "Posts"
     folder: "content/posts"
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
-
