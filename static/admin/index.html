@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Manager</title>
-    <!-- Include the script that enables Netlify Identity on this page. -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.19/auth0-spa-js.production.js"></script>
+    <script src="auth0.js"></script> <!-- Link to your custom Auth0 script -->
   </head>
+
   <body>
-    <!-- Include the script that builds the page and powers Decap CMS -->
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <div id="nc-root"></div>
+    <button id="login-button" onclick="login()">Login</button>
+    <button id="logout-button" onclick="logout()">Logout</button>
+
+    <script>
+      // Check if the user is logged in and show/hide appropriate buttons
+      auth0Client.isAuthenticated().then(isAuthenticated => {
+        if (isAuthenticated) {
+          document.getElementById("login-button").style.display = "none";
+          document.getElementById("logout-button").style.display = "block";
+          // Load the CMS interface here
+          CMS.init();
+        } else {
+          document.getElementById("login-button").style.display = "block";
+          document.getElementById("logout-button").style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>
