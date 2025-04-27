@@ -1,4 +1,4 @@
-baseURL = 'https://thomascrepinge.github.io/adopt-a-pet/'
+baseURL = "https://example.com/"  # <-- dummy value
 languageCode = 'en-us'
 title = 'Adopt a pet'
 theme = "ananke"
