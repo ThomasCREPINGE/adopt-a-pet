@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adopt a pet</title>
+    <link>https://example.com/</link>
+    <description>Recent content on Adopt a pet</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fluffy</title>
+      <link>https://example.com/posts/fluffy-post/</link>
+      <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://example.com/posts/fluffy-post/</guid>
+      <description>&lt;p&gt;Here is Fluffy !&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Loona</title>
+      <link>https://example.com/posts/loona-post/</link>
+      <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://example.com/posts/loona-post/</guid>
+      <description>&lt;p&gt;Here is Loona !&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marley</title>
+      <link>https://example.com/posts/marley-post/</link>
+      <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://example.com/posts/marley-post/</guid>
+      <description>&lt;p&gt;Here is Marley !&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

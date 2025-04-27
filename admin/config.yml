@@ -1,0 +1,48 @@
+backend:
+  name: github
+  repo: ThomasCREPINGE/adopt-a-pet
+  branch: main
+  base_url: https://api.github.com
+
+auth:
+  name: auth0
+  auth0:
+    client_id: GP2FYmT4h4erVgBS69BKSebdVIdkRbuP
+    domain: dev-oy3el56b50grkeob.us.auth0.com
+    redirect_uri: https://precious-chebakia-037a96.netlify.app/admin
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+
+auth:
+  name: auth0
+  auth0:
+    client_id: GP2FYmT4h4erVgBS69BKSebdVIdkRbuP
+    domain: dev-oy3el56b50grkeob.us.auth0.com
+    redirect_uri: https://precious-chebakia-037a96.netlify.app/admin
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
